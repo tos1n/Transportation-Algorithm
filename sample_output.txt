@@ -1,0 +1,59 @@
+Here's the current cost table:
+                        A               B               C               D     supply
+   Source1          (0)27           (0)33           (0)34           (0)41         54
+   Source2          (0)31           (0)29           (0)37           (0)30         67
+   Source3          (0)40           (0)32           (0)28           (0)35         29
+
+Initial solution:
+                        A               B               C               D     supply
+   Source1          (21)27           (0)33           (22)34           (11)41         54
+   Source2          (0)31           (32)29           (0)37           (35)30         67
+   Source3          (0)40           (0)32           (29)28           (0)35         29
+
+Starting at (factory,source): (Source1, B)
+Moved from (factory,source): (Source1, B) to (factory,source): (Source1, A)
+Moved from (factory,source): (Source1, B) to (factory,source): (Source1, C)
+Moved from (factory,source): (Source1, C) to (factory,source): (Source3, C)
+Moved from (factory,source): (Source1, B) to (factory,source): (Source1, D)
+Moved from (factory,source): (Source1, D) to (factory,source): (Source2, D)
+Moved from (factory,source): (Source2, D) to (factory,source): (Source2, B)
+Starting at (factory,source): (Source2, A)
+Moved from (factory,source): (Source2, A) to (factory,source): (Source2, B)
+Moved from (factory,source): (Source2, A) to (factory,source): (Source2, D)
+Moved from (factory,source): (Source2, D) to (factory,source): (Source1, D)
+Moved from (factory,source): (Source1, D) to (factory,source): (Source1, A)
+Starting at (factory,source): (Source2, C)
+Moved from (factory,source): (Source2, C) to (factory,source): (Source2, B)
+Moved from (factory,source): (Source2, C) to (factory,source): (Source2, D)
+Moved from (factory,source): (Source2, D) to (factory,source): (Source1, D)
+Moved from (factory,source): (Source1, D) to (factory,source): (Source1, A)
+Moved from (factory,source): (Source1, D) to (factory,source): (Source1, C)
+Starting at (factory,source): (Source3, A)
+Moved from (factory,source): (Source3, A) to (factory,source): (Source3, C)
+Moved from (factory,source): (Source3, C) to (factory,source): (Source1, C)
+Moved from (factory,source): (Source1, C) to (factory,source): (Source1, A)
+Starting at (factory,source): (Source3, B)
+Moved from (factory,source): (Source3, B) to (factory,source): (Source3, C)
+Moved from (factory,source): (Source3, C) to (factory,source): (Source1, C)
+Moved from (factory,source): (Source1, C) to (factory,source): (Source1, A)
+Moved from (factory,source): (Source1, C) to (factory,source): (Source1, D)
+Moved from (factory,source): (Source1, D) to (factory,source): (Source2, D)
+Moved from (factory,source): (Source2, D) to (factory,source): (Source2, B)
+Starting at (factory,source): (Source3, D)
+Moved from (factory,source): (Source3, D) to (factory,source): (Source3, C)
+Moved from (factory,source): (Source3, C) to (factory,source): (Source1, C)
+Moved from (factory,source): (Source1, C) to (factory,source): (Source1, A)
+Moved from (factory,source): (Source1, C) to (factory,source): (Source1, D)
+Solution optimized!
+Optimal solution found!
+Optimal solution found!
+Optimal solution found!
+Solution optimized!
+Optimal solution found!
+Final solution:
+                        A               B               C               D     supply
+   Source1          (21)27           (11)33           (43)34           (-21)41         54
+   Source2          (0)31           (0)29           (0)37           (67)30         67
+   Source3          (0)40           (21)32           (8)28           (0)35         29
+
+
